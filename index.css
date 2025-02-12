@@ -1,0 +1,178 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://www.pokemontimes.it/home/wp-content/uploads/2012/06/pokemon-super-mystery-dungeon-mappa-del-mondo_pokemontimes-it.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 10px;
+  background-position: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  border: 5px solid #af4c4c;
+  background-color: rgba(255, 255, 255, 0.85);
+  position: relative;
+  color: #0064cf;
+}
+
+.container h1 {
+  font-size: 24px;
+  color: #090908;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pokemon-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #af4c4c;
+}
+
+#pokemon-stats {
+  margin-top: 10px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#pokemon-stats h3 {
+  font-size: 18px;
+  color: #af4c4c;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#pokemon-stats p {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: rgba(245, 245, 245, 0.7);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#pokemon-stats p span {
+  font-weight: bold;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #af4c4c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px 5px;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #3c9f4e;
+}
+
+button:active {
+  background-color: #862c2c;
+}
+
+#stat-legend {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#stat-legend h4 {
+  font-size: 18px;
+  color: #af4c4c;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#stat-legend ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#stat-legend ul li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+#stat-legend ul li span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+/* Media Queries for Tablet */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .pokemon-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  #pokemon-stats {
+    padding: 12px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  #stat-legend {
+    padding: 12px;
+  }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 480px) {
+  .container {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .pokemon-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  #pokemon-stats {
+    padding: 10px;
+  }
+
+  #pokemon-stats p {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  #stat-legend {
+    padding: 10px;
+  }
+}

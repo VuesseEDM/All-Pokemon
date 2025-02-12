@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>ALL POKEMON EVOLUTION</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="pokemon-name"></h1>
+      <img
+        id="pokemon-image"
+        class="pokemon-image"
+        src=""
+        alt="Immagine Pokémon"
+      />
+
+      <div id="pokemon-stats">
+        <p>HP: <span id="pokemon-hp"></span></p>
+        <p>Attacco: <span id="pokemon-attack"></span></p>
+        <p>Difesa: <span id="pokemon-defense"></span></p>
+        <p>Attacco Speciale: <span id="pokemon-special-attack"></span></p>
+        <p>Difesa Speciale: <span id="pokemon-special-defense"></span></p>
+        <p>Velocità: <span id="pokemon-speed"></span></p>
+      </div>
+
+      <button onclick="getPreviousPokemon()">BACK</button>
+
+      <button onclick="getNextPokemon()">NEXT</button>
+    </div>
+
+    <audio id="background-music" autoplay loop>
+      <source
+        src="pokemon_pokemon-theme-gotta-catch-em-all-master.mp3"
+        type="audio/mp3"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script src="index.js"></script>
+  </body>
+</html>
